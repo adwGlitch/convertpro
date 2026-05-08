@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-50 antialiased selection:bg-indigo-500/30 font-sans;
+  }
+}
+
+.glass-panel {
+  @apply bg-white/70 dark:bg-slate-900/70 backdrop-blur-xl border border-white/20 dark:border-slate-800/50 shadow-2xl shadow-indigo-500/5 dark:shadow-indigo-900/10 transition-all duration-300;
+}
+
+.glass-nav {
+  @apply bg-white/60 dark:bg-slate-950/60 backdrop-blur-xl border-b border-slate-200/50 dark:border-slate-800/50;
+}
+
+.gradient-btn {
+  @apply bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white font-medium shadow-lg hover:shadow-indigo-500/30 transition-all duration-300 transform active:scale-95;
+}
+
+.premium-card-hover {
+  @apply hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(99,102,241,0.3)] dark:hover:shadow-[0_20px_40px_-15px_rgba(99,102,241,0.15)] hover:border-indigo-300 dark:hover:border-indigo-700/50;
+}
